@@ -1,17 +1,17 @@
 # uzmanposta-javarestclient
-
-UzmanPostaRestClient client = new UzmanPostaRestClient("email address here", "password here");
+ <br />
+UzmanPostaRestClient client = new UzmanPostaRestClient("email address here", "password here"); <br />
 		
-LogRequest logRequest = new LogRequest.LogRequestBuilder()
-.addDomain("yourdomain.com")
-.addFromEmail("fromemail@abc.com")
-.addMailTo("toemail@abc.com")
-.addSubject("Mail Subject")
-.addStartDate(new Date("2017/03/06"))
-.build();
-		
-List<QueryResult> logs = client.getLogs(logRequest);	
-
-for (QueryResult queryResult : logs) {
-  System.out.println(queryResult.getStatus_code());
-}
+LogRequest logRequest = new LogRequest.LogRequestBuilder()  <br />
+.addDomain("yourdomain.com")  <br />
+.addFromEmail("fromemail@abc.com")  <br />
+.addMailTo("toemail@abc.com")  <br />
+.addSubject("Mail Subject")  <br />
+.addStartDate(new Date("2017/03/06"))  <br />
+.build();  <br />
+		 <br />
+List<QueryResult> logs = client.getLogs(logRequest);	 <br />
+ <br />
+for (QueryResult queryResult : logs) { <br />
+  System.out.println(queryResult.getStatus_code()); <br />
+} <br />
